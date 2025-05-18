@@ -44,9 +44,6 @@ const {
 const figlet = require("figlet");
 const { color } = require("./lib/color");
 
-const store = makeInMemoryStore({
-  logger: pino().child({ level: "silent", stream: "store" }),
-});
 
 async function startA17() {
   console.log(
